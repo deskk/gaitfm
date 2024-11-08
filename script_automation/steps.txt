@@ -1,0 +1,12 @@
+Overview of Steps:
+
+Set Up Your Environment
+Install Required Libraries
+Configure WebDriver
+Automate the Login Process
+Read Data from CSV Files
+Automate Web Interactions for Each Subject
+Handle File Uploads
+Initiate Data Processing
+Loop the Process for All Subjects
+Best Practices and Tips
