@@ -2,7 +2,7 @@
 to extract relevant motion capture files within a subject directory
 
 target files including:
-"*.trc" "*.c3d" "*.mat" "*.osim"
+"*.trc" "*.c3d" "*.mat"
 
 run the following:
 chmod +x extract_files.sh
@@ -26,7 +26,7 @@ SAVE_PATH="$TOP_DIR/$SAVE_DIR"
 mkdir -p "$SAVE_PATH"
 
 # Define file extensions to search for
-EXTENSIONS=("*.trc" "*.c3d" "*.mat" "*.osim")
+EXTENSIONS=("*.trc" "*.c3d" "*.mat")
 
 # Find and copy files
 for ext in "${EXTENSIONS[@]}"; do

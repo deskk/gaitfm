@@ -1,0 +1,134 @@
+{
+  "id": "6fa4bf36-bace-4ad5-aa07-2592c5e5d592",
+  "version": "2.0",
+  "name": "addbiomechanics-test",
+  "url": "https://addbiomechanics.org",
+  "tests": [{
+    "id": "e8af6bb7-139a-4dee-b069-68f944873bf4",
+    "name": "test_create_subjects",
+    "commands": [{
+      "id": "8a52da69-85cc-44b4-8258-8c1e4b15bfcf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0898127f-afb8-434f-87d6-8b55ee0e3300",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1150x1043",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0cf45350-914e-42c2-b505-8cda1b75df12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.gap-3",
+      "targets": [
+        ["css=.gap-3", "css:finder"],
+        ["xpath=//a[contains(text(),'Process Your\n            Data')]", "xpath:link"],
+        ["xpath=(//a[contains(@href, 'https://app.addbiomechanics.org')])[2]", "xpath:href"],
+        ["xpath=//div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8477a22d-fd05-4a89-8b1d-16633da4326b",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8db1aa11-fc69-4aad-b1cf-88e2ffc15f52",
+      "comment": "",
+      "command": "type",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@value='test-criekinge']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test-criekinge"
+    }, {
+      "id": "5dc40693-2556-4277-9ae6-c3ebfd366cc5",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create New Dataset')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "936f9efa-782f-43f5-9a84-87e1772321f3",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=test-criekinge",
+      "targets": [
+        ["linkText=test-criekinge", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'test-criekinge')]", "xpath:link"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div[2]/div/table/tbody/tr[6]/td[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/data/b010a08f-1922-cc7c-2fc0-105bcc9dc08c/test-criekinge/')]", "xpath:href"],
+        ["xpath=//tr[6]/td[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'test-criekinge')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92d2ff45-1152-4d89-ad72-1449b9eea853",
+      "comment": "",
+      "command": "click",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4adbe03e-fe03-4e3f-97e5-154bc7c9962b",
+      "comment": "",
+      "command": "type",
+      "target": "css=input:nth-child(1)",
+      "targets": [
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='SUBJ01']", "xpath:attributes"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "SUBJ01"
+    }, {
+      "id": "f01c9b6d-363c-4bbb-8025-06b08c26328e",
+      "comment": "",
+      "command": "click",
+      "target": "css=.btn:nth-child(3)",
+      "targets": [
+        ["css=.btn:nth-child(3)", "css:finder"],
+        ["xpath=//div[@id='root']/div/div/div/div[3]/div/div[2]/div/div/div/button", "xpath:idRelative"],
+        ["xpath=//div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Create New Subject')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "fb7bdaff-5d6b-46a5-b9d5-4a9d0ab3d384",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8af6bb7-139a-4dee-b069-68f944873bf4"]
+  }],
+  "urls": ["https://addbiomechanics.org/"],
+  "plugins": []
+}
